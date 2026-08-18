@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Auto - Prémium és Megbízható Autók</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Elite<span>Auto</span></div>
+        <nav>
+            <a href="#hero">Kezdőlap</a>
+            <a href="#cars">Kínálat</a>
+            <a href="#contact">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Találd meg a tökéletes autót!</h1>
+        <p>Böngéssz széles kínálatunkból a legnépszerűbb márkák közül.</p>
+    </section>
+
+    <main id="cars" class="container">
+        <h2>Eladó Járműveink</h2>
+        
+        <!-- Szűrők -->
+        <div class="filter-container">
+            <input type="text" id="searchInput" placeholder="Keresés típus vagy név alapján..." onkeyup="filterCars()">
+            
+            <select id="brandFilter" onchange="filterCars()">
+                <option value="all">Minden márka</option>
+                <option value="Mercedes">Mercedes-Benz</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Audi">Audi</option>
+                <option value="Opel">Opel</option>
+                <option value="Skoda">Skoda</option>
+            </select>
+
+            <select id="sortFilter" onchange="filterCars()">
+                <option value="default">Rendezés: Alapértelmezett</option>
+                <option value="price-asc">Ár: Növekvő</option>
+                <option value="price-desc">Ár: Csökkenő</option>
+                <option value="year-desc">Évjárat: legújabb elöl</option>
+            </select>
+        </div>
+
+        <!-- Autó kártyák rácsa -->
+        <div id="carList" class="car-grid">
+            <!-- A JavaScript ide tölti be az autókat -->
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>EliteAuto Kereskedés</h3>
+            <p>Cím: 1051 Budapest, Autóút 42.</p>
+            <p>Telefon: +36 1 234 5678 | Email: info@eliteauto.hu</p>
+            <p>&copy; 2026 EliteAuto. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
