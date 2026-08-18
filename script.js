@@ -7,7 +7,7 @@ const cars = [
         year: 2022,
         km: 45000,
         price: 11500000,
-        image: "https://via.placeholder.com/400x250?text=Skoda+Superb"
+        image: "https://placehold.co/600x400/004d25/white?text=Skoda+Superb"
     },
     {
         brand: "Skoda",
