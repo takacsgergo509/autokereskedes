@@ -15,7 +15,7 @@ const cars = [
         year: 2021,
         km: 62000,
         price: 10800000,
-        image: "https://via.placeholder.com/400x250?text=Skoda+Kodiaq"
+        image: "AUTOKERESKEDES/superb.jpg"
     },
     {
         brand: "Skoda",
