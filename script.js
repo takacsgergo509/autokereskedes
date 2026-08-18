@@ -7,7 +7,7 @@ const cars = [
         year: 2022,
         km: 45000,
         price: 11500000,
-        image: "https://via.placeholder.com/400x250?text=Skoda+Superb"
+        image: "superb.jpg"
     },
     {
         brand: "Skoda",
