@@ -7,7 +7,7 @@ const cars = [
         year: 2022,
         km: 45000,
         price: 11500000,
-        image: "https://placehold.co/600x400/004d25/white?text=Skoda+Superb"
+        image: "superb.jpg"
     },
     {
         brand: "Skoda",
@@ -15,7 +15,7 @@ const cars = [
         year: 2021,
         km: 62000,
         price: 10800000,
-        image: "https://via.placeholder.com/400x250?text=Skoda+Kodiaq"
+        image: "skoda.kodiak.avif"
     },
     {
         brand: "Skoda",
