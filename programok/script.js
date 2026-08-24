@@ -15,7 +15,7 @@ const cars = [
         year: 2021,
         km: 62000,
         price: 10800000,
-        image: "képek/skoda.kodaik.avif"
+        image: "képek/skoda.kodiak.avif"
     },
     {
         brand: "Skoda",
