@@ -23,6 +23,29 @@
     </section>
 
     <main id="cars" class="container">
+        <!-- BEJELENTKEZÉS ÉS REGISZTRÁCIÓ DOBOZ -->
+    <div class="auth-container">
+        <!-- REGISZTRÁCIÓS DOBOZ -->
+        <div id="register-box">
+            <h2>Regisztráció</h2>
+            <input type="text" id="reg-username" placeholder="Felhasználónév">
+            <input type="password" id="reg-password" placeholder="Jelszó">
+            <button onclick="register()">Regisztráció</button>
+            <p>Már van fiókod? <a href="#" onclick="showLogin()">Jelentkezz be!</a></p>
+        </div>
+
+        <!-- BEJELENTKEZÉSI DOBOZ -->
+        <div id="login-box" style="display: none;">
+            <h2>Bejelentkezés</h2>
+            <input type="text" id="login-username" placeholder="Felhasználónév">
+            <input type="password" id="login-password" placeholder="Jelszó">
+            <button onclick="login()">Bejelentkezés</button>
+            <p>Még nincs fiókod? <a href="#" onclick="showRegister()">Regisztrálj!</a></p>
+        </div>
+
+        <!-- ÜZENETEK (Sikeres/Sikertelen) -->
+        <p id="auth-message" style="color: red; font-weight: bold; margin-top: 10px;"></p>
+    </div>
         <h2>Eladó Járműveink</h2>
         
         <!-- Szűrők -->
