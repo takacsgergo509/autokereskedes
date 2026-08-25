@@ -313,3 +313,34 @@ function register() {
         showLogin();
     }, 1500);
 }
+
+// 2. BEJELENTKEZÉS
+function login() {
+    const userInput = document.getElementById('login-username').value.trim();
+    const passInput = document.getElementById('login-password').value.trim();
+    const message = document.getElementById('auth-message');
+
+    const savedUser = localStorage.getItem('registeredUser');
+    const savedPass = localStorage.getItem('registeredPass');
+
+    if (!savedUser) {
+        message.style.color = 'red';
+        message.innerText = 'Még nem regisztráltál fiókot!';
+        return;
+    }
+
+    // Adatok ellenőrzése
+    if (userInput === savedUser && passInput === savedPass) {
+        message.style.color = 'green';
+        message.innerText = 'Sikeres bejelentkezés!';
+
+        // Elrejtjük az űrlapot a sikeres bejelentkezés után
+        setTimeout(() => {
+            document.querySelector('.auth-container').style.display = 'none';
+            alert('Üdvözlünk az oldalon, ' + savedUser + '!');
+        }, 800);
+    } else {
+        message.style.color = 'red';
+        message.innerText = 'Hibás felhasználónév vagy jelszó!';
+    }
+}
