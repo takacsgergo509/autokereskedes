@@ -23,7 +23,7 @@ const cars = [
         year: 2020,
         km: 88000,
         price: 7200000,
-        image: "https://via.placeholder.com/400x250?text=Skoda+Octavia"
+        image: "../képek/skoda.octavia.png"
     },
     {
         brand: "Skoda",
@@ -31,7 +31,7 @@ const cars = [
         year: 1999,
         km: 185000,
         price: 650000,
-        image: "https://via.placeholder.com/400x250?text=Skoda+Felicia"
+        image: "../képek/skoda.felicia.jpg"
     },
 
     // --- MERCEDES ---
@@ -41,7 +41,7 @@ const cars = [
         year: 2021,
         km: 38000,
         price: 14500000,
-        image: "https://via.placeholder.com/400x250?text=Mercedes+C-Class"
+        image: "../képek/c.class.avif"
     },
     {
         brand: "Mercedes",
@@ -49,7 +49,7 @@ const cars = [
         year: 2022,
         km: 29000,
         price: 19800000,
-        image: "https://via.placeholder.com/400x250?text=Mercedes+E-Class"
+        image: "../képek/e.class.webp"
     },
     {
         brand: "Mercedes",
@@ -57,7 +57,7 @@ const cars = [
         year: 2023,
         km: 15000,
         price: 28900000,
-        image: "https://via.placeholder.com/400x250?text=Mercedes+GLE"
+        image: "../képek/gle.suv.jpg"
     },
     {
         brand: "Mercedes",
@@ -65,7 +65,7 @@ const cars = [
         year: 2020,
         km: 22000,
         price: 42000000,
-        image: "https://via.placeholder.com/400x250?text=Mercedes+AMG+GT"
+        image: "../képek/amg.gt.avif"
     },
 
     // --- VOLKSWAGEN ---
@@ -75,7 +75,7 @@ const cars = [
         year: 2018,
         km: 110000,
         price: 5400000,
-        image: "https://via.placeholder.com/400x250?text=VW+Golf"
+        image: "../képek/golf.7.jpg"
     },
     {
         brand: "Volkswagen",
@@ -83,7 +83,7 @@ const cars = [
         year: 2020,
         km: 75000,
         price: 8200000,
-        image: "https://via.placeholder.com/400x250?text=VW+Passat"
+        image: "../képek/passat.b8.jpg"
     },
     {
         brand: "Volkswagen",
@@ -91,7 +91,7 @@ const cars = [
         year: 2021,
         km: 50000,
         price: 9900000,
-        image: "https://via.placeholder.com/400x250?text=VW+Tiguan"
+        image: "../képek/vw.tiguan.webp"
     },
     {
         brand: "Volkswagen",
@@ -99,7 +99,7 @@ const cars = [
         year: 2022,
         km: 32000,
         price: 21500000,
-        image: "https://via.placeholder.com/400x250?text=VW+Touareg"
+        image: "../képek/vw.touareg.avif"
     },
 
     // --- PORSCHE ---
@@ -109,7 +109,7 @@ const cars = [
         year: 2022,
         km: 12000,
         price: 55000000,
-        image: "https://via.placeholder.com/400x250?text=Porsche+911"
+        image: "../képek/p.911.jpg"
     },
     {
         brand: "Porsche",
@@ -117,7 +117,7 @@ const cars = [
         year: 2021,
         km: 35000,
         price: 36000000,
-        image: "https://via.placeholder.com/400x250?text=Porsche+Cayenne"
+        image: "../képek/p.cayenne.webp"
     },
     {
         brand: "Porsche",
@@ -125,7 +125,7 @@ const cars = [
         year: 2020,
         km: 48000,
         price: 32000000,
-        image: "https://via.placeholder.com/400x250?text=Porsche+Panamera"
+        image: "../képek/p.panamera.webp"
     },
     {
         brand: "Porsche",
@@ -133,7 +133,7 @@ const cars = [
         year: 2023,
         km: 8000,
         price: 44000000,
-        image: "https://via.placeholder.com/400x250?text=Porsche+Taycan"
+        image: "../képek/p.taycan.webp"
     },
 
     // --- AUDI ---
@@ -143,7 +143,7 @@ const cars = [
         year: 2019,
         km: 95000,
         price: 7800000,
-        image: "https://via.placeholder.com/400x250?text=Audi+A4"
+        image: "../képek/a4.avant.jpg"
     },
     {
         brand: "Audi",
@@ -151,7 +151,7 @@ const cars = [
         year: 2021,
         km: 54000,
         price: 13900000,
-        image: "https://via.placeholder.com/400x250?text=Audi+A6"
+        image: "../képek/a6.sedan.webp"
     },
     {
         brand: "Audi",
@@ -159,7 +159,7 @@ const cars = [
         year: 2020,
         km: 68000,
         price: 18500000,
-        image: "https://via.placeholder.com/400x250?text=Audi+Q7"
+        image: "../képek/q7.quattro.jpg"
     },
     {
         brand: "Audi",
@@ -167,7 +167,7 @@ const cars = [
         year: 2022,
         km: 19000,
         price: 41000000,
-        image: "https://via.placeholder.com/400x250?text=Audi+RS6"
+        image: "../képek/rs6.avant.avif"
     },
 
     // --- OPEL ---
@@ -177,7 +177,7 @@ const cars = [
         year: 2019,
         km: 82000,
         price: 4200000,
-        image: "https://via.placeholder.com/400x250?text=Opel+Astra"
+        image: "../képek/opel.astra.jpg"
     },
     {
         brand: "Opel",
@@ -185,7 +185,7 @@ const cars = [
         year: 2021,
         km: 30000,
         price: 4900000,
-        image: "https://via.placeholder.com/400x250?text=Opel+Corsa"
+        image: "../képek/corsa.f.jpg"
     },
     {
         brand: "Opel",
@@ -193,7 +193,7 @@ const cars = [
         year: 2020,
         km: 71000,
         price: 6800000,
-        image: "https://via.placeholder.com/400x250?text=Opel+Insignia"
+        image: "../képek/insignia.o.jpg"
     },
     {
         brand: "Opel",
@@ -201,7 +201,7 @@ const cars = [
         year: 2022,
         km: 21000,
         price: 7900000,
-        image: "https://via.placeholder.com/400x250?text=Opel+Mokka"
+        image: "../képek/o.mokka.jpg"
     }
 ];
 
