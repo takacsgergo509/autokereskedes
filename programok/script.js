@@ -273,3 +273,74 @@ function filterCars() {
 document.addEventListener("DOMContentLoaded", () => {
     displayCars(cars);
 });
+
+// === BEJELENTKEZÉSI ÉS REGISZTRÁCIÓS LOGIKA ===
+
+// Váltás a bejelentkezési dobozra
+function showLogin() {
+    document.getElementById('register-box').style.display = 'none';
+    document.getElementById('login-box').style.display = 'block';
+    document.getElementById('auth-message').innerText = '';
+}
+
+// Váltás a regisztrációs dobozra
+function showRegister() {
+    document.getElementById('login-box').style.display = 'none';
+    document.getElementById('register-box').style.display = 'block';
+    document.getElementById('auth-message').innerText = '';
+}
+
+// 1. REGISZTRÁCIÓ
+function register() {
+    const user = document.getElementById('reg-username').value.trim();
+    const pass = document.getElementById('reg-password').value.trim();
+    const message = document.getElementById('auth-message');
+
+    if (user === '' || pass === '') {
+        message.style.color = 'red';
+        message.innerText = 'Kérlek, tölts ki minden mezőt!';
+        return;
+    }
+
+    // Adatok elmentése a böngésző memóriájába (localStorage)
+    localStorage.setItem('registeredUser', user);
+    localStorage.setItem('registeredPass', pass);
+
+    message.style.color = 'green';
+    message.innerText = 'Sikeres regisztráció! Átirányítás a bejelentkezéshez...';
+
+    setTimeout(() => {
+        showLogin();
+    }, 1500);
+}
+
+// 2. BEJELENTKEZÉS
+function login() {
+    const userInput = document.getElementById('login-username').value.trim();
+    const passInput = document.getElementById('login-password').value.trim();
+    const message = document.getElementById('auth-message');
+
+    const savedUser = localStorage.getItem('registeredUser');
+    const savedPass = localStorage.getItem('registeredPass');
+
+    if (!savedUser) {
+        message.style.color = 'red';
+        message.innerText = 'Még nem regisztráltál fiókot!';
+        return;
+    }
+
+    // Adatok ellenőrzése
+    if (userInput === savedUser && passInput === savedPass) {
+        message.style.color = 'green';
+        message.innerText = 'Sikeres bejelentkezés!';
+
+        // Elrejtjük az űrlapot a sikeres bejelentkezés után
+        setTimeout(() => {
+            document.querySelector('.auth-container').style.display = 'none';
+            alert('Üdvözlünk az oldalon, ' + savedUser + '!');
+        }, 800);
+    } else {
+        message.style.color = 'red';
+        message.innerText = 'Hibás felhasználónév vagy jelszó!';
+    }
+}
